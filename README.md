@@ -24,6 +24,5 @@ To run the API on your local server, run the following command:
 python app.py
 ```
 <img src="demo.jpg" width=50% height=1% align="centre">
-![View of output](./demo.jpg)
 
 Simply provide the title of a book related to the genre or theme you're interested in, and the system will suggest similar books.
