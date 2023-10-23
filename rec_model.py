@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import linear_kernel
 books_multiple_tags = pd.read_csv('books.csv')
 
 ## Performing TF-IDF on the corpus column and using cosine_sim to get similarity values
-tf_corpus = TfidfVectorizer(analyzer='word', ngram_range=(1, 2),min_df=0, stop_words='english')
+tf_corpus = TfidfVectorizer(analyzer='word', ngram_range=(1, 2),min_df=0.0, stop_words='english')
 tfidf_matrix_corpus = tf_corpus.fit_transform(books_multiple_tags['tags'].values.astype('U'))
 cosine_sim_corpus = linear_kernel(tfidf_matrix_corpus, tfidf_matrix_corpus)
 
